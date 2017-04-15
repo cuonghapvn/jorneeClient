@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_host_register_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1080"
+    android:fillViewport="true"
+    android:isScrollContainer="false" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:orientation="vertical"
+            android:padding="3dip" >
+
+            <com.fpt.edu.jornee.customview.CNSquareImageView
+                android:id="@+id/userAvatar"
+                android:layout_width="120dip"
+                android:layout_height="120dip"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/controllRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_actionbar"
+            android:scaleType="fitXY" >
+
+            <Button
+                android:id="@+id/btnHostRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="UserName"
+                        android:textStyle="bold"
+            
+            android:textColor="#ffffff" />
+
+        <AutoCompleteTextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/userfullname"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/thumbnail"
+            android:ems="10"
+            android:textColor="#ffffff" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <TextView
+            android:id="@+id/userfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username"
+            android:layout_below="@+id/username"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/location"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/userfullname"
+            android:layout_alignTop="@+id/location"
+            android:paddingLeft="10dp"
+                        android:textStyle="bold"
+            
+            android:paddingTop="10dp"
+            android:text="Location"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/about_your_place"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/errorTextViewHostRegister"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView6"
+            android:ems="5"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:textColor="#ffffff" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/errorTextViewHostRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/controllRelativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/location"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+                        android:textStyle="bold"
+            
+            android:text="Free from"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/free_from"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/location"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TextView01"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            
+            android:text="Click to set"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_toLeftOf="@+id/free_from"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="To"
+                        android:textStyle="bold"
+            
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/free_to"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_alignLeft="@+id/free_from"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/free_from"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Click to set"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/TextView02"
+            android:layout_below="@+id/TextView02"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+                        android:textStyle="bold"
+            
+            android:text="Phone"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/free_to"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/free_to"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/phone"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+                        android:textStyle="bold"
+            
+            android:text="About yourselft"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/about_yourself"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView5"
+            android:ems="5"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/about_yourself"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+                        android:textStyle="bold"
+            
+            android:text="About your place"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</ScrollView>

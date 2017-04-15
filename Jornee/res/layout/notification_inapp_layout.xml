@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: notification_inapp_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff33b5e5"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    tools:ignore="Overdraw" >
+
+    <com.fpt.edu.jornee.customview.CNSquareImageView
+        android:id="@+id/ivSenderAvatar"
+        android:layout_width="@dimen/general.list.item.height"
+        android:layout_height="@dimen/general.list.item.height"
+        android:layout_margin="@dimen/general.view.margin.medium"
+        android:background="@drawable/bg_shadown_border"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_no_image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNotiContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btnFollow"
+            style="@style/jorneeStyle.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/btn_red_button"
+            android:text="Ignore"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

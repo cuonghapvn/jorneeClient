@@ -1,0 +1,40 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_host_profile_view_tips_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:weightSum="13" >
+
+    <ListView
+        android:id="@+id/host_profile_list_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="11" />
+
+    <TextView
+        android:id="@+id/host_profile_view_tips_btn_submit"
+        style="@style/jorneeStyle.button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="@dimen/general.view.margin"
+        android:layout_marginRight="@dimen/general.view.margin"
+        android:layout_marginTop="@dimen/general.view.margin"
+        android:layout_weight="2"
+        android:background="@drawable/btn_red_button_selector"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

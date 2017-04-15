@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: activity_entry_view_details_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shadow_span" >
+
+    <RelativeLayout
+        android:id="@+id/entryDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lcdtInfor" >
+
+        <FrameLayout
+            android:id="@+id/frameImage"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:measureAllChildren="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/entryDetailImgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/entryDetailDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@color/black"
+                android:padding="5dip"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lcdtInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/checkinStartpointText"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/checkinStartpointText"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/entryDetailDatetimeText"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/tvDateTime" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Location" />
+
+            <TextView
+                android:id="@+id/entryDetailLocationText"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:text="16.07852, 108.1785" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewBar"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/entryDetailButtBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/entryDetailEditButt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/btn_blue_button_selector"
+                android:onClick="onClickEntryDetailEdit"
+                android:src="@drawable/ic_action_edit" />
+
+            <ImageButton
+                android:id="@+id/entryDetailDeleteButt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/entryDetailEditButt"
+                android:background="@drawable/btn_red_button_selector"
+                android:onClick="onClickEntryDetailDelete"
+                android:src="@drawable/ic_action_delete" />
+
+            <ImageButton
+                android:id="@+id/entryDetailShareButt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_blue_button_selector"
+                android:onClick="onClickEntryDetailShare"
+                android:src="@drawable/ic_action_share" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

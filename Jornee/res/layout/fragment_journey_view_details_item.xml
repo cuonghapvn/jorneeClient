@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_journey_view_details_item.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_list_journey_profile_item" >
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lcdtInfor"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/entryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:id="@+id/frameText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dip"
+                    android:text="Hihi"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/ivEntryImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_no_image"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionWithImage"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="0dip"
+                    android:background="#CC000000"
+                    android:padding="5dip"
+                    android:textColor="#ffffffff"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lcdtInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user.info.avatar.thumbnail.user.margin"
+            android:layout_marginRight="@dimen/user.info.avatar.thumbnail.user.margin"
+            android:stretchColumns="2" >
+
+            <TableRow
+                android:id="@+id/rlStartPoint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin.large"
+                    android:gravity="left|center"
+                    android:text="Start Point" />
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tvStartPoint"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rlVehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin.large"
+                    android:gravity="left|center"
+                    android:text="Vehicle" />
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tvVehicle"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/general.view.margin"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin.large"
+                    android:gravity="left|center"
+                    android:text="Date" />
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin.large"
+                    android:gravity="left|center"
+                    android:text="Location" />
+
+                <TextView
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/general.view.margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/colon" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/jorneeStyle.chatview.sender"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left|center"
+                    android:singleLine="true" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/viewBar"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/comboButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/btn_blue_button_selector"
+                android:src="@drawable/ic_action_edit" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnEdit"
+                android:background="@drawable/btn_red_button_selector"
+                android:src="@drawable/ic_action_delete" />
+
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_blue_button_selector"
+                android:src="@drawable/ic_share_interesting" />
+
+            <ImageButton
+                android:id="@+id/btnSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:visibility="invisible"
+                android:layout_toLeftOf="@+id/btnShare"
+                android:background="@drawable/btn_gray_button" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

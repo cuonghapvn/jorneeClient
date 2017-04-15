@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_user_profile_journeys_item.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/front"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_default"
+    android:orientation="vertical"
+    android:tag="front"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/meContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_border_shadow"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:id="@+id/meOwnerInfoSpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/user.entry.horizonal.margin"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/txtMeOwnerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tvJourneyName"
+                            style="@style/jorneeStyle.user.item.title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="false"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvJourneyCreateDate"
+                        style="@style/jorneeStyle.user.item.time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/general.view.margin.small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tvJourneyStatus"
+                        style="@style/jorneeStyle.user.item.time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/general.view.margin.small"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btnNumberOfEntries"
+                style="@style/jorneeStyle.user.item.comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.horizonal.margin"
+                android:background="@drawable/bg_src_me_comment_indicate"
+                android:gravity="center"
+                android:text="" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/emptyJourneySpan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/user.entry.horizonal.margin"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvEmptyJourney"
+                style="@style/jorneeStyle.chatview.sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/general.view.margin.medium"
+                android:singleLine="true"
+                android:text="Empty journey! Swipe to edit!" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/notEmptyJourneySpan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user.entry.media.separator"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail1Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail1"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail1"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail2Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.media.separator"
+                android:layout_marginRight="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail2"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail2"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail3Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.media.separator"
+                android:layout_marginRight="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail3"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail3"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail4Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.media.separator"
+                android:layout_marginRight="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail4"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail4"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail5Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail5"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail5"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</RelativeLayout>

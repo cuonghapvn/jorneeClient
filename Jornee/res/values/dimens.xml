@@ -1,0 +1,80 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: dimens.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin2">5dp</dimen>
+    <dimen name="activity_vertical_margin2">5dp</dimen>
+    <dimen name="activity_horizontal_margin_0">0dp</dimen>
+    <dimen name="activity_vertical_margin_0">0dp</dimen>
+    <dimen name="user.entry.border.horizonal.margin">8.0dip</dimen>
+    <dimen name="user.entry.border.vertical.margin">4.0dip</dimen>
+    <dimen name="user.entry.media.separator">1.0dip</dimen>
+    <dimen name="user.entry.horizonal.margin">8.0dip</dimen>
+    <dimen name="user.entry.vertical.margin">10.0dip</dimen>
+    <dimen name="user.entry.avatar.size">48.0dip</dimen>
+    <dimen name="user.entry.vip.icon.size">24.0dip</dimen>
+    <dimen name="user.entry.time.text.size">11.0sp</dimen>
+    <dimen name="user.entry.owner.text.size">18.0sp</dimen>
+    <dimen name="user.entry.content.text.size">18.0sp</dimen>
+    <dimen name="user.entry.like.button.height">30.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.me.size">66.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.me.size.mini">37.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.user.size">92.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.user.margin.cover">-50.0dip</dimen>
+    <dimen name="user.info.action.thumbnail.size.height">52.0dip</dimen>
+    <dimen name="user.info.action.thumbnail.size.width">64.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.user.margin">15.0dip</dimen>
+    <dimen name="user.info.avatar.thumbnail.clan.size">96.0dip</dimen>
+    <dimen name="general.view.margin.smallest">1.0dip</dimen>
+    <dimen name="general.view.margin.small">2.0dip</dimen>
+    <dimen name="general.view.margin">4.0dip</dimen>
+    <dimen name="general.view.margin.plus.shadow">6.0dip</dimen>
+    <dimen name="general.view.margin.medium">8.0dip</dimen>
+    <dimen name="general.view.margin.large">16.0dip</dimen>
+    <dimen name="general.text.medium">14.0sp</dimen>
+    <dimen name="general.text.small">12.0sp</dimen>
+    <dimen name="general.text.smallest">10.0sp</dimen>
+    <dimen name="general.syncbutton.corner.radius">5.0px</dimen>
+    <dimen name="general.journey.corner.radius">5.0px</dimen>
+    <dimen name="general.button.corner.radius">0.0px</dimen>
+    <dimen name="general.list.item.height">48.0dip</dimen>
+    <dimen name="general.list.item.height.small">32.0dip</dimen>
+    <dimen name="general.list.item.height.smallest">28.0dip</dimen>
+    <dimen name="general.button.size.min.mini">36.0dip</dimen>
+    <dimen name="general.button.size.min.smallest">32.0dip</dimen>
+    <dimen name="general.icon.vip.size">36.0dip</dimen>
+    <dimen name="general.icon.kul.message.size">72.0dip</dimen>
+    <dimen name="general.icon.ptt.message.size">64.0dip</dimen>
+    <dimen name="journey.title.text.size">18.0sp</dimen>
+    <dimen name="entry.title.text.size">16.0sp</dimen>
+    <dimen name="entry.time.text.size">12.0sp</dimen>
+    <dimen name="map.conver.width">240.0dip</dimen>
+    <dimen name="map.conver.height">120.0dip</dimen>
+    <dimen name="map.avatar.size">60.0dip</dimen>
+    <dimen name="map.avatar.margin">7.0dip</dimen>
+    <dimen name="map.avatar.margin.overlay">-35.0dip</dimen>
+    <dimen name="contact.item.avatar.size">64.0dip</dimen>
+    <dimen name="contact.item.horizon.pading">2.0dip</dimen>
+    <dimen name="contact.item.vertical.pading">2.0dip</dimen>
+    <dimen name="contact.item.device.size">15.0dip</dimen>
+    <dimen name="contact.item.subtitle.font.size">9.0sp</dimen>
+    <dimen name="contact.item.title.font.size">14.0sp</dimen>
+    <dimen name="chat_message_min_width">96.0dip</dimen>
+    <dimen name="chat_status_text_size">12.0sp</dimen>
+    <dimen name="minwidth_bubble_chatcontent">100.0dip</dimen>
+    <dimen name="minheight_bubble_chatcontent">43.0dip</dimen>
+    <dimen name="margin_bottom_time_chatcontent">5.0dip</dimen>
+    <dimen name="maxwidth_namesender_chatcontent">100.0dip</dimen>
+    <dimen name="item_list_default_minheight">62.0dip</dimen>
+
+</resources>

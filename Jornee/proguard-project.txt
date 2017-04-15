@@ -1,0 +1,29 @@
+#-------------------------------------------------------------------------------
+# Capstone Project: Jornee 
+# FileName: proguard-project.txt
+# Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+# All rights reserved. 
+# No part of this application source code or any of its contents may be reproduced, 
+# copied, modified or adapted, without the prior written consent of the author, 
+# unless otherwise indicated for stand-alone materials.
+#-------------------------------------------------------------------------------
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}

@@ -1,0 +1,49 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: styles.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <!-- Base application theme for API 11+. This theme completely replaces -->
+    <!-- AppBaseTheme from res/values/styles.xml on API 11+ devices. -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+
+        <!-- API 11 theme customizations can go here. -->
+
+
+        <!-- Implementation of attributes needed for the navigation drawer as the default implementation is based on API-14. -->
+        <item name="myapp_listPreferredItemHeightSmall">48dip</item>
+        <item name="myapp_textAppearanceListItemSmall">@style/MyappDrawerMenu</item>
+        <item name="myapp_activatedBackgroundIndicator">@drawable/ab_transparent_action_bar</item>
+    </style>
+
+    <style name="MyappDrawerMenu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/actionMenuTextColor</item>
+    </style>
+
+    <color name="white_opaque">#FFFFFFFF</color>
+    <color name="pitch_black">#FF000000</color>
+
+    <style name="MyTheme" parent="android:Theme.Light">
+        <item name="android:background">@color/white_opaque</item>
+        <item name="android:windowBackground">@color/white_opaque</item>
+        <item name="android:colorBackground">@color/white_opaque</item>
+    </style>
+
+</resources>

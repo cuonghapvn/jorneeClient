@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: dialog_host_profile_rate_result.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+     >
+
+    <TextView
+        android:id="@+id/hostProfileRatingBar_1_numberRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfileRatingBar_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfileRatingBar_1"
+        android:layout_toRightOf="@+id/hostProfileRatingBar_5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <TextView
+        android:id="@+id/hostProfileRatingBar_3_numberRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfileRatingBar_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfileRatingBar_3"
+        android:layout_toRightOf="@+id/hostProfileRatingBar_5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <TextView
+        android:id="@+id/hostProfileRatingBar_4_numberRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfileRatingBar_4"
+        android:layout_alignLeft="@+id/hostProfileRatingBar_5_numberRate"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfileRatingBar_4"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <TextView
+        android:id="@+id/hostProfileRatingBar_5_numberRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfileRatingBar_5"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfileRatingBar_5"
+        android:layout_toRightOf="@+id/hostProfileRatingBar_5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <TextView
+        android:id="@+id/hostProfile_numberRate_everage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfile_everage_rate"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfile_everage_rate"
+        android:layout_toRightOf="@+id/hostProfile_everage_rate"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <RatingBar
+        android:id="@+id/hostProfileRatingBar_5"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1" />
+
+    <RatingBar
+        android:id="@+id/hostProfileRatingBar_4"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hostProfileRatingBar_5"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="4"
+        android:rating="4"
+        android:stepSize="0.1" />
+
+    <RatingBar
+        android:id="@+id/hostProfileRatingBar_3"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hostProfileRatingBar_4"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="3"
+        android:rating="3"
+        android:stepSize="0.1" />
+
+    <RatingBar
+        android:id="@+id/hostProfileRatingBar_2"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hostProfileRatingBar_3_numberRate"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="2"
+        android:rating="2"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/hostProfileRatingBar_2_numberRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostProfileRatingBar_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hostProfileRatingBar_2"
+        android:layout_toRightOf="@+id/hostProfileRatingBar_5"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="(0)" />
+
+    <RatingBar
+        android:id="@+id/hostProfileRatingBar_1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hostProfileRatingBar_2"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="1"
+        android:rating="1"
+        android:stepSize="0.1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hostProfileRatingBar_1_numberRate" />
+
+    <RatingBar
+        android:id="@+id/hostProfile_everage_rate"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_toLeftOf="@+id/hostProfileRatingBar_1_numberRate"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+</RelativeLayout>

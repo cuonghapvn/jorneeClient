@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: outside_activity_footer.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <FrameLayout
+        android:id="@+id/attachedMeItemSpan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/user.entry.horizonal.margin"
+        android:layout_marginRight="@dimen/user.entry.horizonal.margin"
+        android:layout_marginTop="@dimen/user.entry.vertical.margin"
+        android:background="@drawable/bg_me_entry_attached_item" />
+
+    <LinearLayout
+        android:id="@+id/btnMeActionSpan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/user.entry.horizonal.margin"
+        android:paddingLeft="@dimen/user.entry.horizonal.margin"
+        android:paddingRight="@dimen/user.entry.horizonal.margin"
+        android:paddingTop="@dimen/user.entry.vertical.margin" >
+
+        <LinearLayout
+            android:id="@+id/txtMeItemLikeWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user.entry.like.button.height"
+            android:layout_marginLeft="@dimen/general.view.margin.small"
+            android:background="@drawable/btn_default_button_selector"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivJourneyLikeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_like_gray" />
+
+            <TextView
+                android:id="@+id/tvJourneyLikeNumber"
+                style="@style/jorneeStyle.user.item.like"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="0.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="239" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txtMeItemCommentWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user.entry.like.button.height"
+            android:layout_marginLeft="@dimen/general.view.margin.small"
+            android:background="@drawable/btn_default_button_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/ivJourneyCommentIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_button_small_reply"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvJourneyCommentNumber"
+                style="@style/jorneeStyle.user.item.like"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="0.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="239" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnMeItemLikeSpan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/user.entry.like.button.height"
+            android:layout_marginLeft="@dimen/general.view.margin"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnJourneyViewMore"
+            style="@style/jorneeStyle.user.footer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user.entry.like.button.height"
+            android:layout_marginRight="@dimen/general.view.margin"
+            android:background="@drawable/btn_default_button_selector"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="right"
+            android:padding="@dimen/general.view.margin.small"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_button_small_more" />
+    </LinearLayout>
+
+</LinearLayout>

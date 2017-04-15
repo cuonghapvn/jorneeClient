@@ -1,0 +1,74 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_other_host_profile_view_introduce_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="15" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:text="About yourself"
+            
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#1d7898" />
+
+        <TextView
+            android:id="@+id/host_profile_view_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:ems="10"
+            android:singleLine="false"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.96"
+            
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@android:color/background_light"
+            android:text="About your location"
+            android:textColor="#1d7898" />
+
+        <TextView
+            android:id="@+id/host_profile_view_introduce_about_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_weight="7"
+            android:ems="10"
+            android:singleLine="false"
+            android:textColor="#ffffff" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

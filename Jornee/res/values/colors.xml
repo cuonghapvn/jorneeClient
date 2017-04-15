@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: colors.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<resources>
+
+    <color name="text_color_default">#ff669900</color>
+    <color name="green_color_basic">#ff6e8a4f</color>
+    <color name="translucent_white_18_percent">#30ffffff</color>
+    <color name="translucent_white_50_percent">#80ffffff</color>
+    <color name="translucent_white_60_percent">#99ffffff</color>
+    <color name="translucent_white_80_percent">#ccffffff</color>
+    <color name="translucent_white_90_percent">#e5ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="actionbar_text">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffe34545</color>
+    <color name="blue">#ff0101ff</color>
+    <color name="gray">#ff4d4d4d</color>
+    <color name="background_default">#ffD5D7D2</color>
+    <color name="background_actionbar">#AA327393</color>
+    <color name="background_outside_start_point">#AA327393</color>
+    <color name="background_outside_end_point">#AAe34545</color>
+    <color name="apptheme_color">#1d7898</color>
+    <color name="text_color_1">#ffa29f9f</color>
+    <color name="text_color_2">#ffadadad</color>
+    <color name="text_color_3">#ff0075b7</color>
+    <color name="text_color_4">#ff939393</color>
+    <color name="text_color_5">#ff636362</color>
+    <color name="text_color_6">#ff929191</color>
+    <color name="txtdate_color">#ff868686</color>
+    <color name="orange_color_comment_tag">#ffffb400</color>
+    <color name="vip_nick_color">#ff65b320</color>
+    <color name="app_background_color">#ffd5d5d5</color>
+    <color name="nameSenderGroup">#ff6f858e</color>
+    <color name="blue_hint">#ff327393</color>
+    <color name="light_gray">#ffbbbbbb</color>
+    <color name="male_gender">#ff1bb6ed</color>
+    <color name="female_gender">#fffeb0e0</color>
+    <color name="menu_text_p">#ffffffff</color>
+    <color name="menu_text_n">#ff000000</color>
+    
+    <color name="app_default_color">#ff1d7898</color>
+
+    <item name="transparent" type="color">@*android:color/transparent</item>
+    <color name="white_opaque">#FFFFFFFF</color>
+    <color name="pitch_black">#FF000000</color>
+
+    <!-- Home Screen -->
+    <color name="list_journey_item">#ff1d7898</color>
+
+    <!-- Create Journey Screen -->
+    <color name="cjs_journey_name">#ff1d7898</color>
+
+    <item name="semi_transparent" type="color">#99000000</item>
+
+</resources>

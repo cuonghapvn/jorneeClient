@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_account_edit_profile_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_1080"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#104e6f"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Gender"
+                android:textColor="#ffffff" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#104e6f"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radioLGBT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LGBT"
+                    android:textColor="#ffffff" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#104e6f"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Your email :"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/edit_profile_email"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#104e6f"
+                android:ems="10"
+                android:gravity="center_vertical|left"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#104e6f"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Your birthday :"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/txtEditProfileDOB"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="right"
+                android:background="#104e6f"
+                android:gravity="right"
+                android:text="Click to set"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#104e6f"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Click here to change password"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:id="@+id/ErrorEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#104e6f"
+                android:textColor="#f00" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/controllRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_actionbar"
+            android:scaleType="fitXY" >
+
+            <Button
+                android:id="@+id/btnSubmitEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/action_search"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCancelEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/action_search"
+                android:text="Cancel"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

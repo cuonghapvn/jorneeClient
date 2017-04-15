@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: map_marker_info_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_location_marker_info"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgMarketInfoConver"
+        android:layout_width="@dimen/map.conver.width"
+        android:layout_height="@dimen/map.conver.height"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_shadow_span"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/map.avatar.margin.overlay"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/imgMarketInfoAvatar"
+            android:layout_width="@dimen/map.avatar.size"
+            android:layout_height="@dimen/map.avatar.size"
+            android:layout_marginLeft="@dimen/map.avatar.margin"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtMarkerInfoTitle"
+            style="@style/jorneeStyle.text.medium"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general.view.margin.small"
+            android:layout_weight="1.32"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/general.view.margin"
+            android:text=""
+            android:textSize="@dimen/general.text.medium"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMarkerInfoStatus"
+        style="@style/jorneeStyle.text.medium"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="@dimen/general.view.margin.small"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_conversation_blank_box"
+        android:lines="2"
+        android:padding="@dimen/general.view.margin.small"
+        android:text=""
+        android:textSize="@dimen/general.text.small"
+        android:textStyle="normal" />
+
+</LinearLayout>

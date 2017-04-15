@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: btn_green_button_selector.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false" android:state_pressed="false" android:drawable="@drawable/btn_green_button" />
+    <item android:state_selected="false" android:state_pressed="true" android:drawable="@drawable/btn_green_button_press" />
+    <item android:state_selected="true" android:state_pressed="false" android:drawable="@drawable/btn_default_button_selected" />
+    <item android:state_selected="true" android:state_pressed="true" android:drawable="@drawable/btn_default_button_selected_press" />
+</selector>

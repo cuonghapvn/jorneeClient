@@ -1,0 +1,227 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_other_host_profile_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1080"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <com.fpt.edu.jornee.customview.CNSquareImageView
+            android:id="@+id/imgAvatarHostOtherProfile"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_shadown_border"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtUsernameHostProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0f6581"
+                                android:textStyle="bold"
+            
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="#1d7898" >
+
+            <TextView
+                android:id="@+id/txtReputationHostProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/btnRateActionHostprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtReputationHostProfile"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/txtReputationHostProfile"
+                android:src="@drawable/ic_like_orange" />
+
+            <RatingBar
+                android:id="@+id/ratingbarViewHostProfile"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnProfileHostProfile"
+                style="@style/jorneeStyle.button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general.view.margin"
+                android:layout_marginRight="@dimen/general.view.margin"
+                android:layout_marginTop="@dimen/general.view.margin"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue_button"
+                android:text="Profile"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnContactHostProfile"
+                style="@style/jorneeStyle.button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general.view.margin"
+                android:layout_marginRight="@dimen/general.view.margin"
+                android:layout_marginTop="@dimen/general.view.margin"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_button"
+                android:text="Contact"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/thumbnail" >
+
+        <TextView
+            android:id="@+id/txtLocationHostProfile"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+            
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+            android:background="#fdb06e"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#661d7898"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtActivateStatusHostProfile"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                
+                         android:textStyle="bold"
+                         android:textSize="20sp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/txtFreeFromHostProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                                                android:textStyle="italic"
+                    
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="To"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFreeToHostProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/otherHostindicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:background="@android:color/background_light"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/otherHostpager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />  
+          
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1otherprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

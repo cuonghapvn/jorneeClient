@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_searchfriend_result_row.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_journey_profile_item"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/general.view.margin"
+        android:layout_marginLeft="@dimen/general.view.margin"
+        android:layout_marginTop="@dimen/general.view.margin" >
+
+        <com.fpt.edu.jornee.customview.CNSquareImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="@dimen/user.entry.avatar.size"
+            android:layout_height="@dimen/user.entry.avatar.size"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_shadown_border"
+            android:cropToPadding="true"
+            android:padding="@dimen/contact.item.horizon.pading"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        style="@style/jorneeStyle.user.item.title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_marginBottom="22dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/btnFollow"
+        style="@style/jorneeStyle.button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/general.view.margin"
+        android:layout_marginRight="@dimen/general.view.margin"
+        android:layout_marginTop="@dimen/general.view.margin"
+        android:background="@drawable/btn_blue_button_selector"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/btnUnfollow"
+        style="@style/jorneeStyle.button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/general.view.margin"
+        android:layout_marginRight="@dimen/general.view.margin"
+        android:layout_marginTop="@dimen/general.view.margin"
+        android:background="@drawable/btn_green_button_selector"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

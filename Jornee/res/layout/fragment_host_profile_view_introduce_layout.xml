@@ -1,0 +1,86 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_host_profile_view_introduce_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="15" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@android:color/background_light"
+            android:text="About yourself"
+            android:textColor="#1d7898" />
+
+        <EditText
+            android:id="@+id/host_profile_view_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.25"
+            android:ems="10"
+            android:hint="Nothing"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.96"
+            android:background="@android:color/background_light"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="About your location"
+            android:textColor="#1d7898" />
+
+        <EditText
+            android:id="@+id/host_profile_view_introduce_about_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ems="10"
+            android:hint="Nothing"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/host_profile_view_introduce_btnSubmit"
+            style="@style/jorneeStyle.button"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="@dimen/general.view.margin"
+            android:layout_marginTop="@dimen/general.view.margin"
+            android:background="@drawable/btn_red_button_selector"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

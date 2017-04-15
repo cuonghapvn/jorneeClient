@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: fragment_journey_create_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1080" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ButtonFunction"
+        android:layout_margin="@dimen/general.view.margin"
+        android:paddingTop="@dimen/general.view.margin.medium"
+        android:paddingBottom="@dimen/general.view.margin.medium"
+        android:background="@drawable/bg_list_journey_datetime"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etJourneyName"
+            style="@style/jorneeStyle.journey.item.title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:hint="Enter journey's name"
+            android:gravity="left|center"
+            android:inputType="textCapSentences"
+            android:textColor="@color/cjs_journey_name" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvEntries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_below="@+id/linearLayout1" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:scaleType="fitXY" >
+
+        <TextView
+            android:id="@+id/btnCancel"
+            style="@style/jorneeStyle.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/general.view.margin.medium"
+            android:layout_weight="1"
+            android:background="@drawable/btn_journey_cancel_button"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnRemoveSelection"
+            style="@style/jorneeStyle.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general.view.margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_journey_remove_entry_inactive_button"
+            android:saveEnabled="false"
+            android:src="@drawable/ic_action_remove" />
+
+        <ImageView
+            android:id="@+id/btnAdd"
+            style="@style/jorneeStyle.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/general.view.margin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_journey_add_entry_button"
+            android:src="@drawable/ic_action_add" />
+
+        <TextView
+            android:id="@+id/btnSave"
+            style="@style/jorneeStyle.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general.view.margin.medium"
+            android:layout_weight="1"
+            android:background="@drawable/btn_journey_save_button"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

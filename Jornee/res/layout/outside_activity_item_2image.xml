@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: outside_activity_item_2image.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/meContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list_journey_profile_item"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            layout="@layout/outside_activity_header" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user.entry.media.separator"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail1Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2644"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail1"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail1"
+                    android:background="@drawable/bg_shadow_span"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/imgMeMediaThumbnail2Span"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/user.entry.media.separator"
+                android:layout_weight="1.0"
+                android:padding="0.0dip" >
+
+                <com.fpt.edu.jornee.customview.CNSquareImageView
+                    android:id="@+id/imgMeMediaThumbnail2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2644"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtMeMediaThumbnail2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMeMediaThumbnail2"
+                    android:layout_alignTop="@+id/imgMeMediaThumbnail2"
+                    android:background="@drawable/bg_shadow_span" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/outside_activity_footer" />
+    </LinearLayout>
+
+</ScrollView>

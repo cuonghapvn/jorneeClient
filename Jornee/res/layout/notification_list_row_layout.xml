@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Capstone Project: Jornee 
+  FileName: notification_list_row_layout.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shadown_border"
+    android:gravity="top"
+    android:minHeight="@dimen/general.list.item.height" >
+
+    <com.fpt.edu.jornee.customview.CNSquareImageView
+        android:id="@+id/ivSenderAvatar"
+        android:layout_width="@dimen/general.list.item.height"
+        android:layout_height="@dimen/general.list.item.height"
+        android:layout_margin="@dimen/general.view.margin.medium"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_no_image" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/general.view.margin"
+        android:paddingRight="@dimen/general.view.margin.large"
+        android:paddingTop="@dimen/general.view.margin" >
+
+        <TextView
+            android:id="@+id/tvSender"
+            style="@style/jorneeStyle.chatview.sender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:maxLines="1"
+            android:paddingBottom="4.0dip"
+            android:singleLine="true"
+            android:text="cuonghapvn"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/jorneeStyle.history.title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:lineSpacingMultiplier="1.0"
+            android:maxLines="3"
+            android:paddingBottom="4.0dip"
+            android:text="notification content" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/jorneeStyle.user.item.time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="notification datetime"
+            android:textSize="@dimen/general.text.smallest" />
+    </LinearLayout>
+
+</LinearLayout>

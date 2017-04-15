@@ -1,0 +1,496 @@
+<!--
+  Capstone Project: Jornee 
+  FileName: styles.xml
+  Copyright © 2014 4T1C - aka Group 3 - FPT University Da Nang. 
+  All rights reserved. 
+  No part of this application source code or any of its contents may be reproduced, 
+  copied, modified or adapted, without the prior written consent of the author, 
+  unless otherwise indicated for stand-alone materials.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="common.bg.borderShawdown">@drawable/me_border_shadow</item>
+        <item name="me.text.title">@style/jorneeStyle.user.item.title</item>
+        <item name="me.text.time">@style/jorneeStyle.user.item.time</item>
+        <item name="me.text.comment">@style/jorneeStyle.user.item.comment</item>
+        <item name="me.text.content">@style/jorneeStyle.user.item.content</item>
+        <item name="me.media.count">@style/jorneeStyle.user.media.count</item>
+        <item name="me.item.button">@style/jorneeStyle.user.footer</item>
+        <item name="me.text.like">@style/jorneeStyle.user.item.like</item>
+        <item name="history.title">@style/jorneeStyle.history.title</item>
+        <item name="commont.list.item.simple.medium">@style/jorneeStyle.list.item.simple</item>
+        <item name="commont.button.image">@drawable/btn_transparent_image_selector</item>
+        <item name="contact.item.title">@style/jorneeStyle.contact.text.title</item>
+        <item name="contact.item.subTitle">@style/jorneeStyle.contact.text.subTitle</item>
+        <item name="commont.text.unread">@style/jorneeStyle.contact.text.unread</item>
+        <item name="chatView.item.text.sender">@style/jorneeStyle.chatview.sender</item>
+        <item name="chatView.item.text.content">@style/jorneeStyle.chatview.item</item>
+        <item name="chatView.item.text.deliver">@style/jorneeStyle.chatview.deliver</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_example</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Example</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Example</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Example</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Example</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_example</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_example</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Example</item>
+        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="android:actionMenuTextColor">@color/app_default_color</item>
+    </style>
+
+    <color name="custom_theme_color">#b0b0ff</color>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="common.bg.borderShawdown">@drawable/me_border_shadow</item>
+        <item name="me.text.title">@style/jorneeStyle.user.item.title</item>
+        <item name="me.text.time">@style/jorneeStyle.user.item.time</item>
+        <item name="me.text.comment">@style/jorneeStyle.user.item.comment</item>
+        <item name="me.text.content">@style/jorneeStyle.user.item.content</item>
+        <item name="me.media.count">@style/jorneeStyle.user.media.count</item>
+        <item name="me.item.button">@style/jorneeStyle.user.footer</item>
+        <item name="me.text.like">@style/jorneeStyle.user.item.like</item>
+        <item name="history.title">@style/jorneeStyle.history.title</item>
+        <item name="commont.list.item.simple.medium">@style/jorneeStyle.list.item.simple</item>
+        <item name="commont.button.image">@drawable/btn_transparent_image_selector</item>
+        <item name="contact.item.title">@style/jorneeStyle.contact.text.title</item>
+        <item name="contact.item.subTitle">@style/jorneeStyle.contact.text.subTitle</item>
+        <item name="commont.text.unread">@style/jorneeStyle.contact.text.unread</item>
+        <item name="chatView.item.text.sender">@style/jorneeStyle.chatview.sender</item>
+        <item name="chatView.item.text.content">@style/jorneeStyle.chatview.item</item>
+        <item name="chatView.item.text.deliver">@style/jorneeStyle.chatview.deliver</item>
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_example</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Example</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Example</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Example</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Example</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Example</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_example</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_example</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Example</item>
+        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <item name="android:textColorHighlight">#991d7898</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+        <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+        <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+        <item name="android:actionMenuTextColor">@color/app_default_color</item>
+    </style>
+
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">#1d7898</item>
+    </style>
+
+    <style name="AutoCompleteTextViewAppTheme" parent="android:Widget.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_light</item>
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CheckBoxAppTheme" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/apptheme_btn_check_holo_light</item>
+    </style>
+
+    <style name="RadioButtonAppTheme" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/apptheme_btn_radio_holo_light</item>
+    </style>
+
+    <style name="ButtonAppTheme" parent="android:Widget.Button">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ImageButtonAppTheme" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_light</item>
+    </style>
+
+    <style name="ProgressBarAppTheme" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/apptheme_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_progress_indeterminate_horizontal_holo_light</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="RatingBarAppTheme" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/apptheme_ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigAppTheme">
+        <item name="android:progressDrawable">@drawable/apptheme_ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_holo_light</item>
+        <item name="android:minHeight">35dip</item>
+        <item name="android:maxHeight">35dip</item>
+    </style>
+
+    <style name="RatingBarSmallAppTheme">
+        <item name="android:progressDrawable">@drawable/apptheme_ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_ratingbar_small_holo_light</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="ToggleAppTheme" parent="android:Widget.Button.Toggle">
+        <item name="android:background">@drawable/apptheme_btn_toggle_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ActionBar.Solid.Example" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Example</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Example" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_example</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Example</item>
+    </style>
+
+    <style name="PopupMenu.Example" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+    </style>
+
+    <style name="DropDownListView.Example" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Example" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+    </style>
+
+    <style name="DropDownNav.Example" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_example</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_example</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_example</item>
+    </style>
+
+    <style name="ProgressBar.Example" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Example" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_example</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Example.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Example</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Example</item>
+    </style>
+
+    <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/background_actionbar</item>
+    </style>
+
+    <style name="MyActionBarTabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <color name="white_opaque">#FFFFFFFF</color>
+    <color name="pitch_black">#FF000000</color>
+
+    <style name="jorneeStyle.text.smallest" parent="@style/jorneeStyle.text">
+        <item name="android:textSize">@dimen/general.text.smallest</item>
+    </style>
+
+    <style name="jorneeStyle.chatview.deliver" parent="@style/jorneeStyle.text.smallest">
+        <item name="android:textColor">#ff3b3b3b</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="jorneeStyle.chatview.item" parent="@style/jorneeStyle.text.medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="jorneeStyle.chatview.sender" parent="@style/jorneeStyle.text.small">
+        <item name="android:textColor">#ff0b6fbb</item>
+    </style>
+
+    <style name="jorneeStyle.contact.text.subTitle" parent="@style/jorneeStyle.text.small">
+        <item name="android:textSize">@dimen/contact.item.subtitle.font.size</item>
+        <item name="android:textColor">#ff8e8d8d</item>
+    </style>
+
+    <style name="jorneeStyle.contact.text.unread" parent="@style/jorneeStyle.contact.text">
+        <item name="android:textSize">@dimen/general.text.smallest</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_uread_notify</item>
+    </style>
+
+    <style name="jorneeStyle.user.item" parent="@style/jorneeStyle.text.medium" />
+
+    <style name="jorneeStyle.user.item.title" parent="@style/jorneeStyle.user.item">
+        <item name="android:textSize">@dimen/user.entry.owner.text.size</item>
+        <item name="android:textStyle">bold</item>
+        <!-- <item name="android:textColor">@color/green_color_basic</item> -->
+        <item name="android:textColor">@color/blue_hint</item>
+        <item name="android:gravity">top|left|center</item>
+    </style>
+
+    <style name="jorneeStyle.text.medium" parent="@style/jorneeStyle.text">
+        <item name="android:textSize">@dimen/general.text.medium</item>
+    </style>
+
+    <style name="jorneeStyle.journey.item.title" parent="@style/jorneeStyle.journey.item">
+        <item name="android:textSize">@dimen/journey.title.text.size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">top|left|center</item>
+    </style>
+
+    <style name="jorneeStyle.journey.item.entry.title" parent="@style/jorneeStyle.journey.item.entry">
+        <item name="android:textSize">@dimen/entry.title.text.size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">top|left|center</item>
+    </style>
+
+    <style name="jorneeStyle.journey.item.entry.time" parent="@style/jorneeStyle.journey.item.entry">
+        <item name="android:textSize">@dimen/entry.time.text.size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">top|left|center</item>
+    </style>
+
+    <style name="jorneeStyle" />
+
+    <style name="jorneeStyle.journey.item.entry" parent="@style/jorneeStyle.journey.item" />
+
+    <style name="jorneeStyle.journey.item" parent="@style/jorneeStyle.journey" />
+
+    <style name="jorneeStyle.journey" parent="@style/jorneeStyle" />
+
+    <style name="jorneeStyle.text" parent="@style/jorneeStyle" />
+
+    <style name="jorneeStyle.user.item.time" parent="@style/jorneeStyle.text.small">
+        <item name="android:textSize">@dimen/user.entry.time.text.size</item>
+        <item name="android:textColor">@color/text_color_6</item>
+    </style>
+
+    <style name="jorneeStyle.text.small" parent="@style/jorneeStyle.text">
+        <item name="android:textSize">@dimen/general.text.small</item>
+    </style>
+
+    <style name="jorneeStyle.user.footer" parent="@style/jorneeStyle.text.small">
+        <item name="android:textColor">#ff636363</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="jorneeStyle.user.item.comment" parent="@style/jorneeStyle.text.small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="jorneeStyle.user.item.content" parent="@style/jorneeStyle.user.item">
+        <item name="android:textSize">@dimen/user.entry.content.text.size</item>
+        <item name="android:textColor">@color/blue_hint</item>
+    </style>
+
+    <style name="jorneeStyle.user.media.count" parent="@style/jorneeStyle.text.medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="jorneeStyle.list.item.simple" parent="@style/jorneeStyle.text.medium">
+        <item name="android:textColor">#ff4c4c4c</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/general.view.margin</item>
+        <item name="android:paddingRight">@dimen/general.view.margin</item>
+        <item name="android:minHeight">@dimen/general.list.item.height</item>
+    </style>
+
+    <style name="jorneeStyle.contact.text.title" parent="@style/jorneeStyle.contact.text">
+        <item name="android:textSize">@dimen/contact.item.title.font.size</item>
+        <item name="android:textColor">#ff4c4b4b</item>
+    </style>
+
+    <style name="jorneeStyle.contact.text" parent="@style/jorneeStyle.text.medium" />
+
+    <style name="jorneeStyle.user.item.like" parent="@style/jorneeStyle.text.small">
+        <item name="android:textColor">@color/text_color_2</item>
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:padding">@dimen/general.view.margin.small</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="jorneeStyle.button" parent="@style/jorneeStyle.text.medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff5a5a5a</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_default_button_selector</item>
+        <item name="android:minWidth">52.0dip</item>
+        <item name="android:minHeight">42.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="jorneeStyle.history" parent="@style/jorneeStyle.text.small" />
+
+    <style name="jorneeStyle.history.title" parent="@style/jorneeStyle.history">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="chatrow_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="chat_timer_text">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="notification_text_view">
+        <item name="android:textAppearance">@style/notification_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_number_notif</item>
+        <item name="android:minWidth">20.0dip</item>
+        <item name="android:minHeight">20.0dip</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="notification_text">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+        <item name="android:background">#18FF0000</item>
+        <item name="footerColor">#FFAA2222</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#AA000000</item>
+        <item name="selectedColor">#FF000000</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+    <style name="CustomLinePageIndicator">
+        <item name="strokeWidth">4dp</item>
+        <item name="lineWidth">30dp</item>
+        <item name="unselectedColor">#FF888888</item>
+        <item name="selectedColor">#FF880000</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF888888</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/blue_hint</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <!-- <item name="android:typeface">monospace</item> -->
+    </style>
+
+    <style name="CustomUnderlinePageIndicator">
+        <item name="selectedColor">#FFCC0000</item>
+        <item name="android:background">#FFCCCCCC</item>
+        <item name="fadeLength">1000</item>
+        <item name="fadeDelay">1000</item>
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/semi_transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>
